@@ -17,8 +17,8 @@ import React, { useState, useRef, useEffect } from 'react';
       text-align: center;
       padding: 20px;
       background-color: #2a2a2a;
-      border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       animation: ${fadeIn} 0.5s ease-out;
       position: relative;
       display: inline-block;
@@ -26,9 +26,9 @@ import React, { useState, useRef, useEffect } from 'react';
     `;
 
     const Title = styled.h1`
-      color: #B0E0E6;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-      font-size: 2em;
+      color: #F0E6EF;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      font-size: 2.2em;
     `;
 
     const InputContainer = styled.div`
@@ -40,9 +40,9 @@ import React, { useState, useRef, useEffect } from 'react';
     `;
 
     const CuteInput = styled.input`
-      padding: 12px;
+      padding: 14px;
       border: 2px solid #ffb6c1;
-      border-radius: 25px;
+      border-radius: 30px;
       margin: 0 10px;
       flex: 1;
       outline: none;
@@ -52,15 +52,15 @@ import React, { useState, useRef, useEffect } from 'react';
       &::placeholder {
         color: #ffb6c1;
       }
-      padding-left: 35px;
+      padding-left: 40px;
     `;
 
     const AddButton = styled.button`
       background-color: #ffb6c1;
       color: white;
       border: none;
-      padding: 12px 18px;
-      border-radius: 25px;
+      padding: 14px 20px;
+      border-radius: 30px;
       cursor: pointer;
       transition: background-color 0.3s ease;
       &:hover {
@@ -76,12 +76,12 @@ import React, { useState, useRef, useEffect } from 'react';
     `;
 
     const TodoItem = styled(animated.li)`
-      padding: 12px;
+      padding: 14px;
       background-color: #444;
       color: white;
-      border-radius: 8px;
-      margin-bottom: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -92,8 +92,8 @@ import React, { useState, useRef, useEffect } from 'react';
       background-color: #e74c3c;
       color: white;
       border: none;
-      padding: 6px 12px;
-      border-radius: 8px;
+      padding: 8px 14px;
+      border-radius: 10px;
       cursor: pointer;
       transition: background-color 0.3s ease;
       &:hover {
@@ -104,11 +104,11 @@ import React, { useState, useRef, useEffect } from 'react';
     const KittyEar = styled.div`
       width: 0;
       height: 0;
-      border-left: 14px solid transparent;
-      border-right: 14px solid transparent;
-      border-bottom: 28px solid #ffb6c1;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      border-bottom: 32px solid #ffb6c1;
       position: absolute;
-      top: -20px;
+      top: -22px;
     `;
 
     const LeftEar = styled(KittyEar)`
@@ -122,7 +122,7 @@ import React, { useState, useRef, useEffect } from 'react';
     `;
 
     const Heart = styled(animated.span)`
-      font-size: 45px;
+      font-size: 50px;
       color: #ffb6c1;
       position: absolute;
       top: 50%;
@@ -132,7 +132,7 @@ import React, { useState, useRef, useEffect } from 'react';
     `;
 
     const Bow = styled.span`
-      font-size: 20px;
+      font-size: 24px;
       color: #ffb6c1;
       position: absolute;
       left: 10px;
